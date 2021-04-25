@@ -1,0 +1,181 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h2, h3, p, ul, li {
+  line-height: 1.5;
+}
+
+
+/* ID'S Sections - Padding and Color */
+#profile, #contact {
+  background-color: #006494;
+  
+  
+}
+
+#skills {
+  background-color: #fff;
+}
+
+#profile, #skills {
+  padding: 2% 10%;
+}
+
+#contact, #footer {
+  padding: 2% 20%;
+}
+
+#footer {
+  background-color: #193773;
+}
+
+/*  Home - Background-image */
+#home {
+  background-image: url(../img/notebook.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #193773;
+  padding: 2% 10%;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e100ff;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #e100ff;
+  border-color: #e100ff;
+  border: 3px solid;
+}
+
+/* Home section */
+.big-heading {
+  font-size: 3.5rem;
+}
+
+.top-button {
+  background-color: #810000;
+  color: #fff;
+  opacity: 0.9;
+  font-weight: bold;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  padding: 10px 25px;
+}
+
+.top-button:hover {
+  background-color: #193773;
+  color: #fff;
+}
+
+/* Profile Section */
+.profile-content, .pic-div {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 85%;
+  border-radius: 50rem;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills Section */
+.skills-div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 920px;
+  margin: 4% auto;
+  text-align: center;
+}
+
+.skills-div div {
+  flex: 1 1 150px;
+  margin: 10px;
+  background-color: #e84545;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.skills-list {
+  text-align: left;
+}
+
+.icon-pic {
+  padding: 5%;
+}
+
+/* Contact and footer section text-align */
+.contact-div, .footer-div {
+  text-align: center;
+}
+
+/* Footer section */
+.social-media {
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 2%;
+}
+
+.social-media:hover {
+  color: #7F00FF;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 900px) and (max-width: 1199.98px) {
+  .profile-pic {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #profile, #skills, #contact, #footer {
+    padding: 6%;
+  }
+
+  .skills-div {
+    display: block;
+    flex-wrap: nowrap;
+  }
+
+  .skills-div div {
+    flex: none;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
